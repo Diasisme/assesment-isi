@@ -1,10 +1,9 @@
 package api
 
 import (
+	"github.com/Diasisme/asssesment-march-ihsan.git/app"
+	"github.com/Diasisme/asssesment-march-ihsan.git/config/logging"
 	v1 "github.com/go-playground/validator/v10"
-
-	"github.com/Diasisme/asssesment-march-ihsan.git/pkg/logging"
-	"github.com/Diasisme/asssesment-march-ihsan.git/services/account/app"
 )
 
 type accountApi struct {

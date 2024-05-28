@@ -1,8 +1,6 @@
 package app
 
-import (
-	"github.com/Diasisme/asssesment-march-ihsan.git/pkg/logging"
-)
+import 	"github.com/Diasisme/asssesment-march-ihsan.git/config/logging"
 
 type accountApp struct {
 	accRepo AccountDatastore

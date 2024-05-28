@@ -1,9 +1,8 @@
 package app
 
 import (
-	"github.com/Diasisme/asssesment-march-ihsan.git/services/helpers"
-	"github.com/Diasisme/asssesment-march-ihsan.git/services/models"
-	"github.com/Diasisme/asssesment-march-ihsan.git/services/payload"
+	"github.com/Diasisme/asssesment-march-ihsan.git/helpers"
+	"github.com/Diasisme/asssesment-march-ihsan.git/models"
 )
 
 type AccountDatastore interface {
@@ -22,7 +21,4 @@ type AccountApp interface {
 	Daftar(request models.Nasabah) (response helpers.Response, err error)
 	Tabung(request models.Tabungan) (response helpers.Response, err error)
 	Tarik(request models.Tabungan) (response helpers.Response, err error)
-	Transfer(request payload.TransferReq) (response helpers.Response, err error)
-	GetSaldoTabungan(request payload.GetTransaksiReq) (response helpers.Response, err error)
-	GetMutasi(request payload.GetTransaksiReq) (response helpers.Response, err error)
 }
